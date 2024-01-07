@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="fullPage">
+        <div class="leftPortion">
+            <p id="recent">Recent</p>
+            <p id="calculations">Calculations</p>
+            <p class="js-pastCalc" id="pastCalc"></p>
+        </div>
+        <div class="rightPortion">
+            <div class="whholeCalc">
+                <div class="output js-output"></div>
+                <div class="calcbuttons">
+                    <div class="row1">
+                        <button class="tertiary" onclick="clearArray()">AC</button>
+                        <button class="tertiary"onclick="
+                        input = '_'; 
+                        initiateCalculationOp(input);
+                        ">[+/-]</button>
+                        <button class="tertiary" onclick="
+                        input = '%';
+                        initiateCalculationOp(input);
+                        ">%</button>
+                        <button class="secondary" id="butDiv" onclick="
+                        input ='/';
+                        initiateCalculationOp(input);
+                        ">÷</button>
+                    </div>
+                    <div class="row2">
+                        <button onclick="
+                        input = 7;
+                        initiateCalculationNum(input);
+                        ">7</button>
+                        <button onclick="
+                        input = 8;
+                        initiateCalculationNum(input);
+                        ">8</button>
+                        <button onclick="
+                        input = 9;
+                        initiateCalculationNum(input);
+                        ">9</button>
+                        <button class="secondary" id="butMul" onclick="
+                        input = '*';
+                        initiateCalculationOp(input);
+                        ">×</button>
+                    </div>
+                    <div class="row3">
+                        <button onclick="
+                        input = 4;
+                        initiateCalculationNum(input);
+                        ">4</button>
+                        <button onclick="
+                        input = 5;
+                        initiateCalculationNum(input);
+                        ">5</button>
+                        <button onclick="
+                        input = 6;
+                        initiateCalculationNum(input);
+                        ">6</button>
+                        <button class="secondary" id="butMinus" onclick="
+                        input = '-';
+                        initiateCalculationOp(input);
+                        ">-</button>
+                    </div>
+                    <div class="row4">
+                        <button onclick="
+                        input = 1;
+                        initiateCalculationNum(input);
+                        ">1</button>
+                        <button onclick="
+                        input = 2;
+                        initiateCalculationNum(input);
+                        ">2</button>
+                        <button onclick="
+                        input = 3;
+                        initiateCalculationNum(input);
+                        ">3</button>
+                        <button class="secondary" id="butPlus" onclick="
+                        input = '+';
+                        initiateCalculationOp(input);
+                        ">+</button>
+                    </div>
+                    <div class="row5">
+                        <button id="butZero" onclick="
+                        input = 0;
+                        initiateCalculationNum(input);
+                        ">0</button>
+                        <button class="tertiary" onclick="
+                        input = '.';
+                        initiateCalculationNum(input);
+                        ">•</button>
+                        <button class="secondary" id="butEqual" onclick="
+                        input = '=';
+                        initiateCalculationOp(input);
+                        ">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>

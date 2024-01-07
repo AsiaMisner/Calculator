@@ -1,0 +1,113 @@
+body {
+    background-color: #403D39;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.fullPage {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.leftPortion {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    background-color: #252422;
+    align-items: center;
+
+}
+
+#recent {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 80px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#calculations {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #EB5E28;
+    padding-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#pastCalc {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.rightPortion {
+    display: flex;
+    flex-direction: row;
+    flex: 3.5 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.calcbuttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.output {
+    display: flex;
+    justify-content: end;
+    font-size: 55px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+
+button {
+    background-color: #65625E;
+    color: #FFF;
+    border-style: none;
+    font-size: 45px;
+    height: 96px;
+    width: 96px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 4px #302f2c;
+}
+
+#butEqual {
+    background-color: #EB5E28;
+}
+
+#butDiv:hover {
+    background-color: #794F8E;
+}
+
+#butMul:hover {
+    background-color: #42B2DA;
+}
+
+#butMinus:hover {
+    background-color: #CF564B;
+}
+
+#butPlus:hover {
+    background-color: #88B514;
+}
+
+#butZero {
+    width: 207px;
+}
+
+.secondary {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.tertiary {
+    color: rgba(255, 255, 255, 0.6)
+}
